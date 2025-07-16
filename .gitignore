@@ -1,0 +1,8 @@
+/bin
+/dist
+/__pycache__
+.env
+env
+.myenv
+myenv
+

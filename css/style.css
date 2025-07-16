@@ -1,0 +1,94 @@
+/*
+ * 
+ * 
+ * */
+
+nav ul a,
+nav .brand-logo {
+	color: #2A2A2A;
+}
+
+p {
+	line-height: 2rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.card-content {
+	flex-grow: 1;
+}
+.card:hover {
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);
+	transition: all 0.3s ease;
+}
+
+.sidenav-trigger {
+	color: #26a69a;
+}
+
+.parallax-container {
+	min-height: 380px;
+	line-height: 0;
+	height: auto;
+	color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+	width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+	.parallax-container .section {
+		position: absolute;
+		top: 40%;
+	}
+	#index-banner .section {
+		top: 10%;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	#index-banner .section {
+		top: 0;
+	}
+}
+
+.icon-block {
+	padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+p{
+	font-size: 18px;
+}
+h1{
+	font-size: 35px;
+}
+html, body {
+	height: 100%;
+}
+
+.block {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.block-item {
+	flex: 1 1 300px;
+	min-width: 0;
+}
+
+footer.page-footer {
+	margin: 0;
+}
+
+
+
+
+
+
+

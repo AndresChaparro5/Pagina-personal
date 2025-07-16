@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+	<!--
+		quicksave.html
+	
+		Copyright 2025 daroi <daroi@daroi-pc>
+	
+		This program is free software; you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation; either version 2 of the License, or
+		(at your option) any later version.
+	
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+	
+		You should have received a copy of the GNU General Public License
+		along with this program; if not, write to the Free Software
+		Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+		MA 02110-1301, USA.
+	-->
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Quick Save</title>
+		<!-- Favicon -->
+		<link rel="icon" href="../assets/icons/icono_quick_save.png" type="image/x-icon" />
+		
+		<!-- CSS  -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	</head>
+
+	<body>
+		<nav class="nav-extended teal">
+			<div class="nav-wrapper container">
+				<a href="../index.html" class="brand-logo">QuickSave</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="#footer">Contacto</a></li>
+				</ul>
+			</div>
+			<div class="nav-content">
+				<ul class="tabs tabs-transparent">
+					<li class="tab"><a href="#test1">App</a></li>
+					<li class="tab"><a href="#test2">Documentación</a></li>
+					<li class="tab"><a href="#test3">Issues</a></li>
+					<li class="tab"><a href="#test4">Galería</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- App screen -->
+		<div id="test1" class="col s12">
+			<!-- Initial Image -->
+			<div id="index-banner" class="parallax-container">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<br><br>
+						<h1 class="header center teal-text text-lighten-2">Descargador de videos de youtube</h1>
+						<br><br>
+					</div>
+				</div>
+				<div class="parallax">
+					<img src="../assets/images/quick_save/quick_save_portada.png" alt="Unsplashed background img 1">
+				</div>
+			</div>
+			<div class="container">
+				<p>
+					QuickSave es una app movil que te permite descargar videos de yutube de forma legal
+					bajo el fair-use o uso justo. ¿Cómo lo hace? se sirve de la biblioteca yt-dlp
+					que es software libre y hace todo el trabajo de descargar los videos de youtube.
+					<br>
+					<br>
+					Solo tiene que poner la url de el video en el espacio con nombre url, oprimir el 
+					boton <i>"ok"</i> y esperar, luego de un rato se mostrara la lista de los formatos
+					disponibles y la casilla con nombre id. Debe poner el id del formato que desee
+					en la casilla id y dar en el botón <i>"descargar"</i>.
+					<br>
+					<br>
+					Es posible que la app tenga errores ya que es la primera versión. Con el 
+					tiempo y tu retroalimentación estos proyectos progresarán.
+				</p>
+				<h1>
+					Descargar
+				</h1>
+				<p>
+					La descarga es completamente gratuita, solo debes dar en el botón <b>Descargar</b> de abajo 
+					y comenzará automaticamente. 
+				</p>
+				
+				<div class="row">
+					<!-- Card 1 -->
+					<div class="col s12 m12 l12 center">
+						<div class="teal waves-effect waves-light btn-large center">
+							Descargar
+						</div>
+					</div>
+				</div>
+				
+				<br>
+				<br>
+			</div>
+		</div>
+		
+		<!-- Documentation -->
+		<div id="test2" class="col s12">
+			<div class="container">
+				<h1 class="center">QuickSave</h1>
+				<p>
+					This program allows you to download from YouTube with the YT-DLP
+					dependency. It is <b>Free Software</b> and you <b>share it</b>, <b>modify it</b>,
+					or <b>improve it</b> under the terms of the GNU GPL V3.
+				</p>
+				
+<!--
+				<div class="card-image waves-effect waves-block waves-light container">
+					<img width="450" src="../assets/images/quick_save/quick_save_portada.png"  alt="QuickSave image">
+				</div>
+-->
+
+				<hr>
+				
+				<h4>How to get started</h4>
+				<ol>
+					<li>
+						<p>
+							The first thing you have to do is shearch for the video URL
+							you want to download. You must paste the URL in the space provided
+							and click the OK button. 
+						</p>
+					</li>
+					<li>
+						<p>
+							All available formats will then appear with a unique ID.
+							Paste the id in the blank space and click the download buttton.
+						</p>
+					</li>
+					<li>
+						<p>
+							Wait for it to download.
+						</p>
+					</li>
+				</ol>
+				
+				<hr>
+				
+				<h4>How to run and compile the code</h4>
+				<p>
+					The code is available in radicle and you can
+					clone it with:
+					
+					<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+						<div class="card-title" style="color: #06E106;">
+							<i>bash</i>
+						</div>
+						<div class="card-content">
+								<code class="bash" style="color: #06E106;">
+									rad clone rad:z2eyxJzy2cc8ScpNiLKHNBJuJCABZ
+								</code>
+						</div>
+					</div>
+					
+					You must have Radicle installed and
+					configured to clone it.
+					
+					<br><br>
+					
+					This software is written in Python
+					and uses the kivy and kivymd frameworks
+					for cross-platform development. Java17 and 
+					Buildozer are required for compilation.
+				</p>
+				
+				<hr>
+				
+				<h4>How to run</h4>
+				<ol>
+					<li>
+						<p>
+							To create a virtual environment to host the
+							dependencies, run the following commmands.
+							<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+								<div class="card-title" style="color: #06E106;">
+									<i>bash</i>
+								</div>
+								<div class="card-content">
+										<code class="bash" style="color: #06E106;">
+											python -m venv .env
+										</code>
+								</div>
+							</div>
+							<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+								<div class="card-title" style="color: #06E106;">
+									<i>bash</i>
+								</div>
+								<div class="card-content">
+										<code class="bash" style="color: #06E106;">
+											source .env/bin/activate
+										</code>
+								</div>
+							</div>
+						</p>
+					</li>
+					<li>
+						<p>
+							To install all dependencies you must run the
+							following command.
+							<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+								<div class="card-title" style="color: #06E106;">
+									<i>bash</i>
+								</div>
+								<div class="card-content">
+										<code class="bash" style="color: #06E106;">
+											pip install -r requirements.txt
+										</code>
+								</div>
+							</div>
+							<i>
+								Note:  you can use the lastest version of Python to run
+								the program, but it is not recommended to compile it.
+							</i>
+						</p>
+					</li>
+					<li>
+						<p>
+							Finally, to run the program you can do:
+							<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+								<div class="card-title" style="color: #06E106;">
+									<i>bash</i>
+								</div>
+								<div class="card-content">
+										<code class="bash" style="color: #06E106;">
+											python -d src/main.py
+										</code>
+								</div>
+							</div>
+						</p>
+					</li>
+				</ol>
+				
+				<hr>
+				
+				<h4>How to compile the code</h4>
+				<p>
+					The first thing you must have installed to compile
+					the code is Java 17. It is recommended to use python 3.8 or lower,
+					for this you can manage your python versions with pyenv.
+					
+					Please note that the build process can only
+					be performed successfully on GNU/Linux distributions due to
+					buildozer compatibility.
+				</p>
+				<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+						<div class="card-title" style="color: #06E106;">
+							<i>bash</i>
+						</div>
+						<div class="card-content">
+						<code class="bash" style="color: #06E106;">
+							sudo pacman -S openjdk17 
+						</code>
+					</div>
+				</div>
+				<p>
+					Then go to the directory that has the main.py and
+					run the following:
+				</p>
+				<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+						<div class="card-title" style="color: #06E106;">
+							<i>bash</i>
+						</div>
+						<div class="card-content">
+						<code class="bash" style="color: #06E106;">
+							buildozer init
+						</code>
+					</div>
+				</div>
+				<p>
+					A buildozer.spec file is generated
+					and this is where the important configurations for compiling the
+					program will go.
+				</p>
+				<p>
+					<b>
+						The buildozer.spec should include: 
+					</b>
+				</p>
+				<ol>
+					<li>
+						<p>
+							The name of the app, its package and package domain.
+						</p>
+					</li>
+					<li>
+						<p>
+							Source code where the main.py live.
+						</p>
+					</li>
+					<li>
+						<p>
+							Source files to include.
+						</p>
+					</li>
+					<li>
+						<p>
+							Application versioning.
+						</p>
+					</li>
+					<li>
+						<p>
+							All dependency requirements used in the app.
+						</p>
+					</li>
+					<li>
+						<p>
+							Presplash of the application.
+						</p>
+					</li>
+					<li>
+						<p>
+							The path to the app icon. 
+						</p>
+					</li>
+					<li>
+						<p>
+							Author.
+						</p>
+					</li>
+					<li>
+						<p>
+							The Python version being used.
+						</p>
+					</li>
+					<li>
+						<p>
+							kivy version to use.
+						</p>
+					</li>
+					<li>
+						<p>
+							All the permissions the app needs.
+						</p>
+					</li>
+				</ol>
+				<p>
+					<b>Here in order will be given what should go in each case:</b>
+				</p>
+				<h5>1. The name of the app, its package and package domain</h5>
+				<p>
+					(str) Title of your application
+					<br>
+					<b>
+						title = QuickSave
+					</b>
+					<br>
+					(str) Package name
+					<br>
+					<b>
+						package.name = Quick
+					</b>
+					<br>
+					(str) Package domain (needed for android/ios packaging)
+					<br>
+					<b>
+						package.domain = org.QuickSave
+					</b>
+				</p>
+				
+				<h5>2. Source code where the main.py live</h5>
+				<p>
+					(str) Source code where the main.py live
+					<br>
+					<b>
+						source.dir = .
+					</b>
+				</p>
+				
+				<h5>3. Source files to include</h5>
+				<p>
+					(list) Source files to include (let empty to include all the files)
+					<br>
+					<b>
+						source.include_exts = py,png,jpg,kv,atlas,ttf,otf
+					</b>
+				</p>
+				
+				<h5>4. Aplication versioning</h5>
+				<p>
+					(str) Application versioning (method 1)
+					<br>
+					<b>
+						version = 1.0.0
+					</b>
+				</p>
+				
+				<h5>5. All dependency requirements used in the app</h5>
+				<br>
+				<p>
+					(list) Application requirements 
+					comma separated e.g. requirements = sqlite3,kivy
+					<br>
+					<b>
+						requirements = python3, Cython, materialyoucolor, asynckivy, asyncgui, kivy, git+https://github.com/kivymd/KivyMD.git@master, requests, plyer, pyjnius, yt-dlp
+					</b>
+				</p>
+				
+				<h5>6. Presplash of the application</h5>
+				<br>
+				<p>
+					(str) Presplash of the application
+					<br>
+					<b>
+						presplash.filename = %(source.dir)s/assets/icon/icono_quick_save.png
+					</b>
+				</p>
+				
+				<h5>7. The path of the app icon</h5>
+				<p>
+					(str) Icon of the application
+					<br>
+					<b>
+						icon.filename = %(source.dir)s/assets/icon/icono_quick_save.png
+					</b>
+				</p>
+				
+				<h5>8. Author</h5>
+				<p>
+					<b>
+						author = © Andrés Chaparro
+					</b>
+				</p>
+				
+				<h5>9. The Python version being used.</h5>
+				<p>
+					change the major version of python used by the app
+					<br>
+					<b>
+						osx.python_version = 3
+					</b>
+				</p>
+				
+				<h5>10. kivy version to use.</h5>
+				<p>
+					Kivy version to use
+					<br>
+					<b>
+						osx.kivy_version = 2.3.1
+					</b>
+				</p>
+				
+				<h5>11. All the permissions the app needs.</h5>
+				<p>
+					(list) Permissions
+					(See https://python-for-android.readthedocs.io/en/latest/buildoptions/#build-options-1 for all the supported syntaxes and properties)
+					<br>
+					<b>
+						android.permissions = android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE, android.permission.MANAGE_EXTERNAL_STORAGE, android.permission.VIBRATE 
+					</b>
+				</p>
+				
+				<h5>Compile</h5>
+				<p>
+					<b>To compile run the command: </b>
+				</p>
+				
+				<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+						<div class="card-title" style="color: #06E106;">
+							<i>bash</i>
+						</div>
+						<div class="card-content">
+						<code class="bash" style="color: #06E106;">
+							buildozer -v android debug
+						</code>
+					</div>
+				</div>
+				
+				<p>
+					<b>To install in the device you use adb</b>
+				</p>
+				
+				<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+						<div class="card-title" style="color: #06E106;">
+							<i>bash</i>
+						</div>
+						<div class="card-content">
+						<code class="bash" style="color: #06E106;">
+							adb devices
+						</code>
+					</div>
+				</div>
+				
+				<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+						<div class="card-title" style="color: #06E106;">
+							<i>bash</i>
+						</div>
+						<div class="card-content">
+						<code class="bash" style="color: #06E106;">
+							adb install bin/app.apk
+						</code>
+					</div>
+				</div>
+				
+				<p>
+					<b>Or to reinstall or update</b>
+				</p>
+				
+				<div class="card black lighteen-4" style="padding: 20px; border-radius: 8px;">
+						<div class="card-title" style="color: #06E106;">
+							<i>bash</i>
+						</div>
+						<div class="card-content">
+						<code class="bash" style="color: #06E106;">
+							adb -r install bin/app.apk
+						</code>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+		
+		<!-- Issues -->
+		<div id="test3" class="col s12">
+			<div class="container">
+				<p>
+					Los issues o asuntos son errores o propuestas de mejora
+					de la aplicación. Estos estan almacenados en el repositorio
+					de radicle para que cualquiera ayude a atenderlos.
+					Puedes proponer mas issues cuando quieras por mis redes sociales. 
+				</p>
+			</div>
+			
+			<div class="collection">
+				<a href="#!" class="collection-item">
+					<span class="new badge">
+						2025/06/15
+					</span>
+					El mensaje de bienvenida no se muestra la primera vez
+					que se abre la app.
+				</a>
+				<a href="#!" class="collection-item">
+					<span class="new badge">
+						2025/06/15
+					</span>
+					Al descargar la app se realentiza.
+				</a>
+				<a href="#!" class="collection-item">
+					<span class="new badge">
+						2025/06/15
+					</span>
+					No se muestra una notificación de descarga con el progreso.
+				</a>
+				<a href="#!" class="collection-item">
+					<span class="new badge">
+						2025/06/15
+					</span>
+					Solo se descarga el video sin el audio.
+				</a>
+				<a href="#!" class="collection-item">
+					<span class="new badge">
+						2025/06/15
+					</span>
+					Aun no hay soporte para varios idiomas.
+				</a>
+			</div>
+		</div>
+		
+		<!-- Images -->
+		<div id="test4" class="col s12">
+			<!-- Cards -->
+			<div class="container center">
+				<div class="row">
+					<div class="col l6 s10 m6">
+						<div class="card materialboxed">
+							<div class="card-image">
+								<img src="../assets/images/apps_screens/quick_save/app_imagen1.png" >
+								<span class="card-title">QuickSave</span>
+							</div>
+						</div>
+					</div>
+					<div class="col l6 s10 m6">
+						<div class="card materialboxed">
+							<div class="card-image">
+								<img src="../assets/images/apps_screens/quick_save/app_imagen2.png">
+								<span class="card-title">Fácil de usar</span>
+							</div>
+						</div>
+					</div>
+					<div class="col l6 s10 m6">
+						<div class="card materialboxed">
+							<div class="card-image">
+								<img src="../assets/images/apps_screens/quick_save/app_imagen3.png">
+								<span class="card-title">Muchos Formatos</span>
+							</div>
+						</div>
+					</div>
+					<div class="col l6 s10 m6">
+						<div class="card materialboxed">
+							<div class="card-image">
+								<img src="../assets/images/apps_screens/quick_save/app_imagen4.png">
+								<span class="card-title">Elija el id</span>
+							</div>
+						</div>
+					</div>
+					<div class="col l6 s10 m6">
+						<div class="card materialboxed">
+							<div class="card-image">
+								<img src="../assets/images/apps_screens/quick_save/app_imagen5.png">
+								<span class="card-title">Y descargue</span>
+							</div>
+						</div>
+					</div>
+					<div class="col l6 s10 m6">
+						<div class="card materialboxed">
+							<div class="card-image">
+								<img src="../assets/images/apps_screens/quick_save/app_imagen6.png">
+								<span class="card-title">Cambie la ruta de guardado</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="page-footer teal" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Andrés Ch.</h5>
+						<p class="grey-text text-lighten-4">
+							Estudiante de ingenieria de sistemas 
+							en la uptc seccional Sogamoso.
+						</p>
+					</div>
+					<!-- Support -->
+					<div class="col l3 s12">
+						<h5 class="white-text" >Apoyar</h5>
+						<li>
+							<a class="waves-effect waves-light btn modal-trigger tooltipped" data-position="top" data-tooltip="¡Gracias!" href="#modal1">
+								<img src="../assets/icons/paypal.svg" alt="Element icon" height="28px">
+							</a>
+						</li>
+					</div>
+					
+					<!-- Modal -->
+					<div id="modal1" class="modal">
+						<div class="modal-content">
+							<h4 style="color: black;">
+								Gracias
+							</h4>
+							<p style="color: black;">
+								Hacer este trabajo es dificil y toma
+								mucho tiempo, al dar en ok puedes valorar
+								lo que yo hago haciendo una donación
+								en paypal.
+							</p>
+						</div>
+						<div class="modal-footer">
+							<a class="modal-close waves-effect waves-green btn-flat">
+								Cerrar
+							</a>
+							<a 
+							href="https://paypal.me/AndresChaparro5?country.x=CO&locale.x=es_XC" 
+							class="modal-close waves-effect waves-green btn-flat"
+							>
+								OK
+							</a>
+						</div>
+					</div>
+					
+					
+					<!-- Contact -->
+					<div class="col l3 s12">
+						<h5 class="white-text">Contacto</h5>
+						<ul>
+							<!-- Mastodon -->
+							<li>
+								<a class="white-text material-icons" href="https://mastodon.social/@andresChaparro15">
+									<img src="../assets/icons/mastodon.png" alt="Matodon icon" height="28px">
+								</a>
+							</li>
+							<!-- Pixelfed -->
+							<li>
+								<a class="white-text" href="https://pixelfed.social/Andres5_Chaparro78">
+									<img src="../assets/icons/pixelfed.png" alt="Pixelfed icon" height="28px">
+								</a>
+							</li>
+							<!-- Element Matrix -->
+							<li>
+								<a class="white-text" href="https://matrix.to/#/@andresfelipechaparro:matrix.org">
+									<img src="../assets/icons/element.ico" alt="Element icon" height="28px">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Andrés Chaparro</a>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="../js/materialize.js"></script>
+		<script src="../js/init.js"></script>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
